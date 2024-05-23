@@ -39,7 +39,7 @@ def create_vector_store(docs):
     return vectorStore
 
 def create_chain(vectorStore):
-    model = ChatOpenAI(api_key=openaikey,
+    model = ChatOpenAI(api_key=openai_api_key,
         temperature=0.4,
         model='gpt-3.5-turbo-1106'
     )
