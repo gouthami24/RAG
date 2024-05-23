@@ -18,7 +18,7 @@ from langchain_openai import ChatOpenAI
 llm = ChatOpenAI(api_key=openai_api_key, model_name="gpt-3.5-turbo", temperature = 0.5)
 response = llm.invoke("What is LLM")
 #print(response)
-st.write("Before Search using RAG, RESPONSE : ", response)
+st.write("Before Search using RAG, RESPONSE : ", response.content)
 
 def get_docs():
     loader = WebBaseLoader('https://www.techtarget.com/whatis/feature/Foundation-models-explained-Everything-you-need-to-know')
