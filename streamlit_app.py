@@ -74,5 +74,5 @@ response = chain.invoke({
     "input": "What is LLM?",
 })
 
-st.write("After RAG Search, RESPONSE : ", response(answer))
+st.write("After RAG Search, RESPONSE : ", response('answer'))
 #print(response)
