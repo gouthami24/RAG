@@ -9,6 +9,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores.faiss import FAISS
 from langchain.chains import create_retrieval_chain
+from langchain_community.document_loaders import TextLoader
+
 
 # Set your OpenAI API key here
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
