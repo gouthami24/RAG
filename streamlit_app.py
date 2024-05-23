@@ -12,7 +12,7 @@ from langchain.chains import create_retrieval_chain
 # Set your OpenAI API key here
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
-st.title('RAG Search)
+st.title('RAG Search')
 
 from langchain_openai import ChatOpenAI
 llm = ChatOpenAI(api_key=openai_api_key, model_name="gpt-3.5-turbo", temperature = 0.5)
