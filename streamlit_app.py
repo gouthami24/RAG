@@ -34,7 +34,7 @@ def get_docs():
     return splitDocs
 
 def create_vector_store(docs):
-    embedding = OpenAIEmbeddings(api_key=openaikey)
+    embedding = OpenAIEmbeddings(api_key=openai_api_key)
     vectorStore = FAISS.from_documents(docs, embedding=embedding)
     return vectorStore
 
